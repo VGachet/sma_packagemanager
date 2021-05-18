@@ -1,0 +1,62 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '27.0.3'
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile 'commons-io:commons-io:2.4'
+    compile 'com.squareup.okhttp3:okhttp:3.5.0'
+}
+
+///////////////////////////////////
+////       BINTRAY UPLOAD      ////
+///////////////////////////////////
+
+//////////////////////////////////////////
+////                                  ////
+////         Pour uploader :          ////
+////                                  ////
+////     ./gradlew bintrayUpload      ////
+////                                  ////
+//////////////////////////////////////////
+
+ext {
+    bintrayRepo = bintrayrepo
+    bintrayName = bintrayname
+
+    publishedGroupId = publishedgroupid
+    libraryName = libraryname
+    artifact = 'lib_sma-packagemanager'
+
+    libraryDescription = librarydescription
+
+    siteUrl = siteurl
+    gitUrl = giturl
+
+    libraryVersion = projectversion
+
+    developerId = developerid
+    developerName = developername
+    developerEmail = developeremail
+
+    licenseName = licensename
+    licenseUrl = licenseurl
+    allLicenses = alllicenses
+}
+
+apply from: '../maven.gradle'

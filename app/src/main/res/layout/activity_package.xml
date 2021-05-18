@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Package 1 -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/progress_text_1"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Download Package 1" />
+
+            <Button
+                android:id="@+id/button_1"
+                android:text="GO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <!-- Package 2 -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/progress_text_2"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Download Package 2" />
+
+            <Button
+                android:id="@+id/button_2"
+                android:text="GO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <!-- Package 3 -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/progress_text_3"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Download Package 3" />
+
+            <Button
+                android:id="@+id/button_3"
+                android:text="GO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <!-- Log zip folder -->
+        <TextView
+            android:id="@+id/log_zip_folder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="100dp"
+            android:text="Log zip folder"
+            android:background="#666666"
+            android:textColor="#ffffff"
+            android:padding="20dp"
+            android:layout_margin="20dp"/>
+
+        <!-- Log package folder -->
+        <TextView
+            android:id="@+id/log_package_folder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="100dp"
+            android:text="Log package folder"
+            android:background="#666666"
+            android:textColor="#ffffff"
+            android:padding="20dp"
+            android:layout_margin="20dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
+
+
