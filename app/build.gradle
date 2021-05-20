@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
+    compileSdkVersion 27
     buildToolsVersion '27.0.3'
 
     defaultConfig {
         applicationId "fr.smartapps.smadownloadmanager"
         minSdkVersion 16
-        targetSdkVersion 22
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
     }
@@ -20,7 +20,7 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:23.4.0'
-    compile project(':lib_sma-packagemanager')
-    compile 'com.google.code.gson:gson:2.8.0'
+    api 'com.android.support:appcompat-v7:27.1.1'
+    api project(':lib_sma-packagemanager')
+    api 'com.google.code.gson:gson:2.8.0'
 }
